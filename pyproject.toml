@@ -1,0 +1,25 @@
+[project]
+name = "track2-day22-2a202601053-trancongchien"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "datasets>=2.0.0",
+    "faiss-cpu>=1.7.0",
+    "guardrails-ai>=0.5.0",
+    "langchain>=0.3.0",
+    "langchain-anthropic>=0.1.0",
+    "langchain-community>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-google-genai>=1.0.0",
+    "langchain-ollama>=0.1.0",
+    "langchain-openai>=0.3.0",
+    "langchain-text-splitters>=0.3.0",
+    "langsmith>=0.2.0",
+    "numpy>=1.25.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "ragas>=0.4.0",
+    "tiktoken>=0.5.0",
+]

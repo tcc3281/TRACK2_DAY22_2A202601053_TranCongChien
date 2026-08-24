@@ -66,6 +66,7 @@ OPENROUTER_API_KEY=sk-or-...
 ```
 
 Giải thích các biến quan trọng:
+
 - `LANGSMITH_API_KEY`: Xác thực với LangSmith, không bao giờ chia sẻ công khai.
 - `LANGSMITH_PROJECT`: Tên project để nhóm các traces lại, dễ tìm trên dashboard.
 - `LANGCHAIN_TRACING_V2`: Phải là `true` để bật tracing — đặt sai sẽ mất toàn bộ traces.
@@ -672,6 +673,7 @@ python 04_guardrails_validator.py | tee ../evidence/04_pii_demo_log.txt
 Hãy đi qua danh sách này trước khi push lên GitHub:
 
 **Mã nguồn:**
+
 - [ ] `src/01_langsmith_rag_pipeline.py` chạy không có lỗi, in ra 50 câu hỏi/đáp
 - [ ] `src/02_prompt_hub_ab_routing.py` chạy không có lỗi, log hiển thị nhãn v1/v2
 - [ ] `src/03_ragas_evaluation.py` hoàn thành và in bảng điểm so sánh
@@ -679,6 +681,7 @@ Hãy đi qua danh sách này trước khi push lên GitHub:
 - [ ] `data/ragas_report.json` tồn tại và chứa điểm của cả V1 lẫn V2
 
 **Bằng chứng (evidence):**
+
 - [ ] `evidence/01_langsmith_traces.png` — Ảnh chụp LangSmith, thấy rõ ít nhất 50 traces
 - [ ] `evidence/02_prompt_hub.png` — Ảnh chụp Prompt Hub, thấy rõ 2 prompt được đặt tên
 - [ ] `evidence/02_ab_routing_log.txt` — File log có nội dung, hiển thị cả v1 lẫn v2
@@ -688,6 +691,7 @@ Hãy đi qua danh sách này trước khi push lên GitHub:
 - [ ] `evidence/04_json_demo_log.txt` — File log có ít nhất 4 test case
 
 **Bảo mật:**
+
 - [ ] `.gitignore` có dòng `.env`
 - [ ] Không có API key nào xuất hiện trong bất kỳ tệp `.py` nào
 - [ ] Lệnh `git diff --cached` không hiển thị nội dung `.env`
@@ -699,6 +703,7 @@ Hãy đi qua danh sách này trước khi push lên GitHub:
 ### 1. Tạo GitHub repository public
 
 Truy cập [github.com/new](https://github.com/new), tạo repository mới:
+
 - Tên: `day22-langsmith-lab` (hoặc tên tự chọn)
 - Visibility: **Public** (bắt buộc để chấm điểm)
 - Không tích "Initialize with README" (vì bạn đã có code)
